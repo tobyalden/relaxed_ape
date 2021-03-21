@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>relaxed ape</title>
+    <style>
+        html {
+            background: url(./images/relaxedape.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("html").on("click", function(){
+            $("#song")[0].play();
+        })
+    </script>
+</head>
+<body>
+    <audio loop id="song">
+      <source src="music/nokibay.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
